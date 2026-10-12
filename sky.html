@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover beautiful destinations, travel inspiration and unforgettable adventures with SkyVista.">
+  <title>SkyVista | Explore the World</title>
+  <link rel="stylesheet" href="sky.css">
+  <link rel="preconnect" href="https://images.unsplash.com">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header">
+    <nav class="navbar container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">▲</span> Sky<span>Vista</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle"
+        aria-label="Open navigation" aria-expanded="false">
+        ☰
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#video">Video</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact" class="nav-contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">YOUR NEXT ADVENTURE STARTS HERE</p>
+        <h1>Explore. Discover.<br><span>Experience.</span></h1>
+        <p class="hero-description">
+          Discover extraordinary places, breathtaking landscapes,
+          and unforgettable experiences around the world.
+        </p>
+        <div class="hero-buttons">
+          <a href="#gallery" class="btn btn-primary">Explore Destinations ↗</a>
+          <a href="#about" class="btn btn-outline">Discover Our Story</a>
+        </div>
+        <div class="hero-note">✦ &nbsp; Find your next unforgettable destination</div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container about-grid">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=85"
+            alt="Beautiful green mountain landscape"
+            loading="lazy">
+          <div class="image-label">
+            <strong>More than a journey</strong>
+            <span>It's a story worth telling.</span>
+          </div>
+        </div>
+
+        <div class="about-text">
+          <p class="eyebrow">ABOUT SKYVISTA</p>
+          <h2>The world is waiting <span>for you.</span></h2>
+          <p>
+            At SkyVista, we believe travel is about more than reaching
+            a destination. It's about discovering new cultures, meeting
+            people, enjoying nature and creating memories that last.
+          </p>
+          <p>
+            From peaceful mountain escapes to vibrant coastal cities,
+            find inspiration for your next adventure with us.
+          </p>
+
+          <div class="stats">
+            <div><strong>50+</strong><span>Destinations</span></div>
+            <div><strong>20K+</strong><span>Happy Explorers</span></div>
+            <div><strong>100%</strong><span>Adventure</span></div>
+          </div>
+
+          <a href="#gallery" class="btn btn-primary">Explore Our Gallery ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A WORLD OF POSSIBILITIES</p>
+            <h2>Places that take <span>your breath away.</span></h2>
+            <p>Find inspiration for the journey you've always imagined.</p>
+          </div>
+        </div>
+
+        <div class="filters" aria-label="Filter destinations">
+          <button class="filter-btn active" data-filter="all">All Places</button>
+          <button class="filter-btn" data-filter="nature">Nature</button>
+          <button class="filter-btn" data-filter="beach">Beaches</button>
+          <button class="filter-btn" data-filter="city">Cities</button>
+        </div>
+
+        <div class="gallery-grid">
+          <article class="gallery-card" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=900&q=85"
+              alt="Snow-covered mountain peaks" loading="lazy">
+            <div class="card-info"><span>Nature</span><h3>Mountain Escapes</h3></div>
+          </article>
+
+          <article class="gallery-card" data-category="beach">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=900&q=85"
+              alt="Tropical beach and turquoise sea" loading="lazy">
+            <div class="card-info"><span>Beach</span><h3>Tropical Paradise</h3></div>
+          </article>
+
+          <article class="gallery-card" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=900&q=85"
+              alt="Sunlight filtering through a green forest" loading="lazy">
+            <div class="card-info"><span>Nature</span><h3>Into the Wild</h3></div>
+          </article>
+
+          <article class="gallery-card" data-category="city">
+            <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=900&q=85"
+              alt="City buildings illuminated at night" loading="lazy">
+            <div class="card-info"><span>City</span><h3>City Lights</h3></div>
+          </article>
+
+          <article class="gallery-card" data-category="beach">
+            <img src="https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=900&q=85"
+              alt="Beautiful tropical island coast" loading="lazy">
+            <div class="card-info"><span>Beach</span><h3>Island Getaway</h3></div>
+          </article>
+
+          <article class="gallery-card" data-category="nature">
+            <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85"
+              alt="Mountain lake surrounded by green hills" loading="lazy">
+            <div class="card-info"><span>Nature</span><h3>Hidden Lakes</h3></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section class="section video-section" id="video">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">SEE THE WORLD DIFFERENTLY</p>
+          <h2>Your next adventure <span>in motion.</span></h2>
+          <p>Take a moment, press play, and let the journey begin.</p>
+        </div>
+
+        <div class="video-wrapper">
+          <video
+            controls
+            preload="metadata"
+            poster="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1600&q=85"
+            aria-label="Travel inspiration video">
+            <source
+              src="https://videos.pexels.com/video-files/3129671/3129671-hd_1920_1080_25fps.mp4"
+              type="video/mp4">
+            Your browser does not support HTML video.
+          </video>
+        </div>
+        <p class="video-caption">Beautiful places. New perspectives. Endless possibilities.</p>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="section reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-heading centered">
+          <p class="eyebrow">TRAVELER STORIES</p>
+          <h2>Memories that <span>stay with us.</span></h2>
+          <p>Every journey has a story worth sharing.</p>
+        </div>
+
+        <div class="reviews-grid">
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"SkyVista inspired me to explore places I had only dreamed about. Every journey opens your mind."</p>
+            <div class="reviewer"><div class="avatar">A</div><div><strong>Amara O.</strong><span>Adventure lover</span></div></div>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"The photography and destination ideas are incredible. I found inspiration for my next holiday."</p>
+            <div class="reviewer"><div class="avatar">D</div><div><strong>Daniel K.</strong><span>Travel enthusiast</span></div></div>
+          </article>
+          <article class="review-card">
+            <div class="stars">★★★★★</div>
+            <p>"A beautiful place to discover new destinations and dream about my next big adventure."</p>
+            <div class="reviewer"><div class="avatar">F</div><div><strong>Fatima R.</strong><span>Nature explorer</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-box">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2>Where will your story <span>take you?</span></h2>
+        <p>Have a destination in mind or simply love travel? We'd love to hear from you.</p>
+        <a class="btn btn-primary"
+          href="mailto:hello@skyvista.example?subject=Travel%20Enquiry">
+          Send Us an Email ↗
+        </a>
+        <p class="contact-note">Demo website — replace this email with your own address.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <a href="#home" class="logo">▲ Sky<span>Vista</span></a>
+      <p>Discover the extraordinary. One journey at a time.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#gallery">Destinations</a>
+        <a href="#video">Video</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="copyright">© <span id="year"></span> SkyVista. Created for adventure.</p>
+    </div>
+  </footer>
+
+  <script src="sky.js"></script>
+</body>
+</html>
